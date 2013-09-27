@@ -10,9 +10,9 @@
 
 if (!empty($_REQUEST['payload'])){
 
-$config["username"] = "MooveAgency";
-$config["password"] = "PF984R80prw54=Y";
-$config["repository"] = "which";
+$config["username"] = "git-username";
+$config["password"] = "git-password";
+$config["repository"] = "git-repository";
 
 $config["branch"]["master"] = "remote"; /* local or remote*/
 $config["branch"]["staging"] = "local"; /* local or remote*/
@@ -20,10 +20,10 @@ $config["branch"]["staging"] = "local"; /* local or remote*/
 $config["repositoryRoot"]["staging"] = "staging"; /* needed also when config[branch][staging] is remote because cache */
 $config["repositoryRoot"]["master"] = "master"; /* needed also when config[branch][master] is remote because cache */
 
-$config["master"]["server"] = "itpa.m-hosting.cz"; /* only needed when config[branch][master] is "remote" */
-$config["master"]["username"] = "haluze"; /* only needed when config[branch][master] is "remote" */
-$config["master"]["password"] = "effecto2013"; /* only needed when config[branch][master] is "remote" */
-$config["master"]["root"] = "gitroot"; /* only needed when config[branch][master] is "remote" */
+$config["master"]["server"] = "master-server"; /* only needed when config[branch][master] is "remote" */
+$config["master"]["username"] = "master-username"; /* only needed when config[branch][master] is "remote" */
+$config["master"]["password"] = "master-pwd"; /* only needed when config[branch][master] is "remote" */
+$config["master"]["root"] = "master-gir-root"; /* only needed when config[branch][master] is "remote" */
 
 
 
