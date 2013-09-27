@@ -110,6 +110,7 @@ fopen($logFile, 'w');
 file_put_contents($logFile, print_r($payload,true));
 
 
+
 if (!empty($deploy->commits)){
 	foreach ($deploy->commits as $commit){
 		if (!empty($commit->modified)){
@@ -140,7 +141,7 @@ if (!empty($deploy->commits)){
 	
 	foreach ($deploy->commits as $commit){
 		if (!empty($commit->removed)){
-			foreach ($commit->removed as $file){  // check new files
+			foreach ($commit->removed as $file){  // check removed files
 				unlink($config["repositoryRoot"][$branch]."/".$file);
 				}
 		}
